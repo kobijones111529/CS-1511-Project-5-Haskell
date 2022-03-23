@@ -1,3 +1,5 @@
+module Main where
+
 import Data.List (intercalate, intersperse, sort)
 import Data.Maybe (mapMaybe)
 import System.IO (IOMode (ReadMode), hGetContents, openFile)
@@ -8,7 +10,7 @@ main = do
   contents <- readFromFile "prices.txt"
   let lns = lines contents
   let nums = mapMaybe readMaybe lns :: [Double]
-  putStrLn ("Data: " ++ (show . sort) nums)
+  -- putStrLn ("Data: " ++ (show . sort) nums)
   putStrLn ("Average: " ++ (show . average) nums)
   putStrLn ("Median: " ++ (show . median) nums)
 
