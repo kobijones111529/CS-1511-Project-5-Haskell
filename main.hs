@@ -1,4 +1,4 @@
-import Data.List (sort, intersperse, intercalate)
+import Data.List (intercalate, intersperse, sort)
 import Data.Maybe (mapMaybe)
 import System.IO (IOMode (ReadMode), hGetContents, openFile)
 import Text.Read (readMaybe)
